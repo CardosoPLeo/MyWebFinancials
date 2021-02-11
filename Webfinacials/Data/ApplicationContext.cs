@@ -6,6 +6,7 @@ namespace Webfinacials.Data
 {
     public class ApplicationContext : DbContext
     {
+
         public ApplicationContext(DbContextOptions  options) : base(options)
         {
 
@@ -42,8 +43,6 @@ namespace Webfinacials.Data
             modelBuilder.Entity<LancamentoDeContas>()
                 .Property(p => p.Acrescimo)
                 .HasColumnType("decimal (18,4)");
-
-
 
         }
 
